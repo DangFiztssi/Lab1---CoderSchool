@@ -3,6 +3,11 @@
     <dimen name="space_normal">16dp</dimen>
     <dimen name="space_extra_large">24dp</dimen>
     <dimen name="size_normal">16sp</dimen>
+    <dimen name="medium_size">18dp</dimen>
     <dimen name="space_large">20dp</dimen>
     <dimen name="size_small">14sp</dimen>
+
+    <dimen name="width_logo">200dp</dimen>
+    <dimen name="height_logo">100dp</dimen>
+
 </resources>

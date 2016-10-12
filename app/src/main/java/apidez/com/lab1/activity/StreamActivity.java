@@ -15,12 +15,15 @@ import apidez.com.lab1.utils.Data;
 
 public class StreamActivity extends AppCompatActivity {
     private ListView lvPost;
+    private PostAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stream);
+
+        adapter = new PostAdapter(this, Data.posts());
         lvPost = (ListView) findViewById(R.id.lvPost);
-        lvPost.setAdapter(new PostAdapter(this, Data.posts()));
+        lvPost.setAdapter(adapter);
     }
 }
